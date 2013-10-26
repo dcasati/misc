@@ -2,7 +2,7 @@
 # a simplified version based on ideas from
 # https://opensource.conformal.com/fluxbb/viewtopic.php?id=473
 # you need to bind this program to a proper shortcut on your wm
-# for instance at i3 I use the following:
+# for instance on i3 I use the following:
 # bindsym $mod+k exec /usr/local/bin/dmenu_ssh
 
 SSH_TO=`awk '/^Host/{print $2}' $HOME/.ssh/config | dmenu`
