@@ -5,7 +5,7 @@
 # for instance on i3 I use the following:
 # bindsym $mod+k exec /usr/local/bin/dmenu_ssh
 
-SSH_TO=`awk '/^Host/{print $2}' $HOME/.ssh/config | dmenu`
+SSH_TO=`awk '/^Host/{print $2}' $HOME/.ssh/config | dmenu | sort`
 XTERM_OPTS="-bg black -fg grey +sb"
 
 if [ $SSH_TO ]; then
